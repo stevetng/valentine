@@ -221,14 +221,17 @@
 
     .letter-question {
       font-family: 'Pacifico', cursive;
-      font-size: 28px;
+      font-size: 26px;
       color: #e91e63;
       font-weight: 400;
       margin-bottom: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      animation: pulse 2s ease-in-out infinite;
+      text-align: center;
+      animation: questionPulse 2s ease-in-out infinite;
+    }
+
+    @keyframes questionPulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
     }
 
     /* Buttons */
